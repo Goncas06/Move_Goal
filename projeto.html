@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projeto - MoveGoal</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="css/estilo.css">
+  <style>
+    body { 
+      font-family: "Raleway", sans-serif; 
+      background: #f8fafc; 
+      color: #1e293b;
+    }
+    .header {
+      background: linear-gradient(135deg, #0d4a7e, #1e6fa8);
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .header h1 { margin: 0; font-weight: 700; font-size: 2.2rem; }
+    .header p { margin: 12px 0 0; opacity: 0.9; }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 32px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    }
+    .section-title {
+      color: #1e40af;
+      margin: 32px 0 24px;
+      font-weight: 700;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 8px;
+    }
+    .content-text {
+      line-height: 1.7;
+      color: #334155;
+      margin-bottom: 24px;
+    }
+    .content-text strong {
+      color: #1e3a8a;
+    }
+    .principles-list {
+      padding-left: 24px;
+    }
+    .principles-list li {
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+    .highlight-box {
+      background: #dbeafe;
+      border-left: 4px solid #3b82f6;
+      padding: 16px;
+      border-radius: 0 8px 8px 0;
+      margin: 24px 0;
+      font-style: italic;
+      color: #1e40af;
+    }
+  </style>
+</head>
+<body>
+
+<header class="header w3-text-white">
+  <h1>MoveGoal</h1>
+  <p>Plataforma de análise de desempenho para jovens atletas amadores</p>
+</header>
+
+<div class="w3-bar w3-black w3-hide-small">
+  <a href="index.html" class="w3-bar-item w3-button">Início</a>
+  <a href="projeto.html" class="w3-bar-item w3-button active">Projeto</a>
+  <a href="parceiros.html" class="w3-bar-item w3-button">Parceiros</a>
+  <a href="contactos.html" class="w3-bar-item w3-button">Contactos</a>
+</div>
+
+<div class="w3-bar w3-black w3-hide-medium w3-hide-large">
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right" onclick="toggleMenu()">&#9776;</a>
+  <a href="projeto.html" class="w3-bar-item w3-button active">Projeto</a>
+</div>
+
+<div id="mobileMenu" class="w3-hide w3-hide-medium w3-hide-large">
+  <a href="index.html" class="w3-bar-item w3-button">Início</a>
+  <a href="parceiros.html" class="w3-bar-item w3-button">Parceiros</a>
+  <a href="contactos.html" class="w3-bar-item w3-button">Contactos</a>
+</div>
+
+<main class="w3-container w3-padding-64">
+  <div class="card">
+    <h1 class="section-title">O Projeto MoveGoal</h1>
+    
+    <p class="content-text">
+      O <strong>MoveGoal</strong> é um projeto de investigação aplicada que surge da necessidade de oferecer aos jovens atletas amadores (entre os 12 e os 18 anos) uma ferramenta simples, visual e motivadora para acompanhar o seu desempenho desportivo ao longo do tempo.
+    </p>
+
+    <div class="highlight-box">
+      O objetivo não é substituir treinadores, mas empoderar jovens com dados claros sobre a sua evolução, promovendo autonomia, consistência e paixão pelo desporto.
+    </div>
+
+    <h2 class="section-title">Objetivos Principais</h2>
+    <ul class="principles-list content-text">
+      <li>Permitir o registo fácil de métricas desportivas (tempo, distância, repetições, velocidade, batimentos cardíacos, etc.).</li>
+      <li>Visualizar a evolução através de gráficos interativos e relatórios semanais personalizados.</li>
+      <li>Incentivar a consistência no treino com metas alcançáveis e sistema de conquistas (badges).</li>
+      <li>Garantir acessibilidade total (WCAG 2.2) e usabilidade em dispositivos móveis, priorizando a experiência do utilizador.</li>
+    </ul>
+
+    <h2 class="section-title">Enquadramento e Justificação</h2>
+    <p class="content-text">
+      Muitos jovens atletas amadores não têm acesso a tecnologia de análise de desempenho devido ao custo elevado ou complexidade das soluções existentes. O MoveGoal propõe uma alternativa <strong>gratuita, intuitiva e centrada no utilizador</strong>, alinhada com princípios de design inclusivo e experiência móvel-first.
+    </p>
+
+    <h2 class="section-title">Fundamentos de Usabilidade e Acessibilidade</h2>
+    <p class="content-text">
+      O desenvolvimento baseia-se em referências académicas e técnicas reconhecidas internacionalmente:
+    </p>
+    <ul class="principles-list content-text">
+      <li><strong>Heurísticas de Nielsen</strong>: visibilidade do estado do sistema, controlo e liberdade do utilizador, consistência, prevenção de erros.</li>
+      <li><strong>8 Regras de Ouro de Shneiderman</strong>: design com feedback imediato, diálogo simples, eficiência e reversibilidade de ações.</li>
+      <li><strong>WCAG 2.2 (Nível AA)</strong>: contraste adequado, navegação por teclado, texto alternativo em imagens, linguagem clara.</li>
+    </ul>
+
+    <h2 class="section-title">Metodologia de Desenvolvimento</h2>
+    <p class="content-text">
+      Este protótipo estático simula a interação do utilizador com a plataforma final. Embora não armazene dados reais (por ser um site estático), demonstra claramente como a interface permitiria:
+    </p>
+    <ul class="principles-list content-text">
+      <li>Visualização de progresso através de gráficos responsivos.</li>
+      <li>Navegação simples entre secções (treinos, metas, perfil).</li>
+      <li>Acompanhamento semanal com sugestões personalizadas (simuladas).</li>
+    </ul>
+  </div>
+</main>
+
+<script>
+function toggleMenu() {
+  var x = document.getElementById("mobileMenu");
+  x.className = x.className.includes("w3-show") ? x.className.replace(" w3-show", "") : x.className + " w3-show";
+}
+</script>
+</body>
+</html>

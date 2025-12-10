@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Início - MoveGoal</title>
+  <!-- W3.CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Fonte Raleway (carregada do Google Fonts) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="css/estilo.css">
+  <style>
+    body { 
+      font-family: "Raleway", sans-serif; 
+      background: #f8fafc; 
+      color: #1e293b;
+    }
+    .header {
+      background: linear-gradient(135deg, #0d4a7e, #1e6fa8);
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .header h1 { margin: 0; font-weight: 700; font-size: 2.4rem; }
+    .header p { margin: 12px 0 0; opacity: 0.9; }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 32px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    }
+    .team-member {
+      text-align: center;
+      margin-top: 24px;
+    }
+    .team-member img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid #e2e8f0;
+      object-fit: cover;
+      margin-bottom: 16px;
+    }
+    .team-member h4 {
+      margin: 8px 0 4px;
+      color: #1e3a8a;
+      font-weight: 700;
+    }
+    .team-member p {
+      color: #475569;
+      margin: 0;
+    }
+    .intro-text {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #334155;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .section-title {
+      text-align: center;
+      color: #1e40af;
+      margin: 32px 0 24px;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+<header class="header w3-text-white">
+  <h1>MoveGoal</h1>
+  <p>Plataforma de análise de desempenho para jovens atletas amadores</p>
+</header>
+
+<!-- Menu de navegação -->
+<div class="w3-bar w3-black w3-hide-small">
+  <a href="index.html" class="w3-bar-item w3-button active">Início</a>
+  <a href="projeto.html" class="w3-bar-item w3-button">Projeto</a>
+  <a href="parceiros.html" class="w3-bar-item w3-button">Parceiros</a>
+  <a href="contactos.html" class="w3-bar-item w3-button">Contactos</a>
+</div>
+
+<div class="w3-bar w3-black w3-hide-medium w3-hide-large">
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right" onclick="toggleMenu()">&#9776;</a>
+  <a href="index.html" class="w3-bar-item w3-button active">Início</a>
+</div>
+<div id="mobileMenu" class="w3-hide w3-hide-medium w3-hide-large">
+  <a href="projeto.html" class="w3-bar-item w3-button">Projeto</a>
+  <a href="parceiros.html" class="w3-bar-item w3-button">Parceiros</a>
+  <a href="contactos.html" class="w3-bar-item w3-button">Contactos</a>
+</div>
+
+<main class="w3-container w3-padding-64">
+
+  <!-- INTRODUÇÃO AO TEMA (exatamente o que o enunciado pede) -->
+  <div class="card">
+    <h2 class="section-title">INTRODUÇÃO</h2>
+    <p class="intro-text">
+      O tema deste trabalho é o <strong>MoveGoal</strong> — uma plataforma web de análise de desempenho 
+      para jovens atletas amadores. O objetivo é demonstrar como uma aplicação simples e acessível 
+      pode ajudar jovens entre os 12 e os 18 anos a acompanhar o seu progresso desportivo, 
+      usando apenas tecnologia web estática.
+    </p>
+  </div>
+
+  <!-- Equipa -->
+  <div class="card">
+    <h2 class="section-title">Nossa Equipa</h2>
+    <div class="w3-row">
+      <div class="w3-col s12 m6 team-member">
+        <img src="imagens/goncalo.jpg" alt="Foto de Gonçalo Dias, Co-Fundador e Desenvolvedor">
+        <h4>Gonçalo Dias</h4>
+        <p>Co-Fundador e Desenvolvedor</p>
+      </div>
+      <div class="w3-col s12 m6 team-member">
+        <img src="imagens/david.jpg" alt="Foto de David Moreira, Co-Fundador e Analista">
+        <h4>David Moreira</h4>
+        <p>Co-Fundador e Analista</p>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<script>
+function toggleMenu() {
+  var x = document.getElementById("mobileMenu");
+  x.className = x.className.includes("w3-show") ? x.className.replace(" w3-show", "") : x.className + " w3-show";
+}
+</script>
+</body>
+</html>
